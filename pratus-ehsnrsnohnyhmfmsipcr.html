@@ -1,0 +1,674 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pratus Insurance Services Dashboard</title>
+<style>
+:root { --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --font-anthropic-serif: Georgia, "Times New Roman", serif;
+  --color-bg:#f7f6f2; --color-panel:#ffffff; --color-fg:#1f1e1b; --color-fg-muted:#6b675e; --color-border-line:#e3e0d7;
+  --color-ok:#2f7d4f; --color-warn:#a2541b; --color-bad:#b3261e;
+  --cds-gap-xs:6px; --cds-gap-sm:10px; --cds-gap-md:14px; --cds-gap-lg:20px; --cds-gap-xl:32px;
+  --cds-pad-sm:8px; --cds-pad-md:12px; --cds-pad-lg:18px; --cds-radius:10px;
+  --cds-font-size-title:30px; --cds-font-size-heading:19px; --cds-font-size-body:15px; --cds-font-size-caption:13px; --cds-font-weight-medium:600;
+  color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --color-bg:#1b1a17; --color-panel:#24231f; --color-fg:#ecebe6; --color-fg-muted:#a6a298; --color-border-line:#3a3832; --color-ok:#5fbf86; --color-warn:#e0955a; --color-bad:#f07a70; color-scheme: dark; } }
+:root[data-theme="dark"] { --color-bg:#1b1a17; --color-panel:#24231f; --color-fg:#ecebe6; --color-fg-muted:#a6a298; --color-border-line:#3a3832; --color-ok:#5fbf86; --color-warn:#e0955a; --color-bad:#f07a70; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans); font-size: 15px; }
+.rose-page { max-width: 1120px; margin: 0 auto; padding: 28px 16px 48px; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+</head><body><div class="rose-page">
+<script type="application/json" id="rose-data">{"data": {"action_items": {"people": [{"key": "leadership", "section": "leadership", "order": 1, "name": "Mindi Pratus & Tamsyn", "role": "Leadership call with Patrick and Savannah", "active": "Yes", "match": "pratus leadership", "working_on": "On Nov 12, Mindi and Tamsyn agreed to move the leadership call from bi-weekly to monthly, with extra calls as needed, so the agency's limited time goes to foundational work. Hiring is the top priority to free Mindi for SOPs and the AMS decision; she finished the New Business SOP and is comparing QQ with Hawksoft before committing. John and Will from the Burnett office train on AgencyZoom at the main office next Thursday, and Pratus will evaluate joining the SBMP aggregator network with Patrick's help after the Germania conference in January.", "as_of": "2026-11-12", "source": "Fathom: Pratus Leadership Call (Nov 12)", "fallback_last_date": "2026-11-12", "fallback_last_title": "Pratus Leadership Call", "fallback_last_with": "Patrick McClure, Savannah Mills", "history": "[{\"as_of\": \"2026-10-28\", \"meeting\": \"Pratus Leadership Call\", \"working_on\": \"Mandatory in-person bi-weekly staff meetings (1-hour meeting plus 1-hour training) to improve communication and reinforce processes across both offices. Tamsyn drafting an SOP for the full life cycle of a service request in AgencyZoom, with one clear owner per task. Reinforcing use of carrier guidelines and underwriter checks before going to brokerage markets. Hawksoft is the likely AMS; confirming the AgencyZoom integration. Recruiting: no strong candidates yet; ad spend adjusted and the Facebook posting is pending.\"}, {\"as_of\": \"2026-10-14\", \"meeting\": \"Pratus Leadership Call\", \"working_on\": \"Burnett office roles realigned: John leads new business and day-to-day coordination there, with Will focused on service. Mindi's workload is still heavy after September's surplus lines crunch (20 renewals) and carrier delays. March 2027 has 27 surplus lines renewals, so planning starts early: Tamsyn is adding them to an AgencyZoom pipeline. AgencyZoom notes are helping the front desk answer client questions. Job posting graphic in progress.\"}]"}], "recruiting": [{"key": "pl_am", "order": 1, "role": "Personal Lines Account Manager", "stage": "Active candidates", "hire": "", "notes": "Hiring is the top priority so Mindi can focus on foundational work. IPT held a virtual interview with the candidate from Progressive on Nov 13 and she remains in the interview stage in Workable; Mindi meets a local candidate this week. Earlier interviews (Oct 28) produced no strong candidates; IPT continues to fund the recruiting ad spend. A major competitor is reportedly moving agents to straight salary, which may open the door to recruiting experienced agents.", "active": "Yes"}], "action_items": [{"key": "t1", "owner": "Tamsyn", "task": "Draft the SOP for service-request intake and completion in AgencyZoom", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t2", "owner": "Tamsyn", "task": "Confirm the Hawksoft / AgencyZoom integration with the recommended agent", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t3", "owner": "Mindi Pratus", "task": "Schedule the first in-person bi-weekly staff meeting", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t4", "owner": "Mindi Pratus", "task": "Assign John to coordinate Burnett office attendance", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t5", "owner": "Mindi Pratus", "task": "Send the New Business SOP to Savannah for feedback", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t6", "owner": "Mindi Pratus", "task": "Review QQ alongside Hawksoft before selecting an AMS", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t7", "owner": "Mindi Pratus", "task": "Meet with the local candidate next week", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t8", "owner": "Tamsyn", "task": "Keep trimming the ENS surplus Q1 renewal list and send 90-day non-renewal letters", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t9", "owner": "Mindi Pratus", "task": "Meet with SBMP at the Germania Agents Conference in January", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}]}, "library": {"files": [{"id": "1TAki_snPVg-kEsqEvLhZ38YIuaW9xicCpAa0fh2de1c", "title": "Pratus Insurance Leadership Call Agenda", "mimeType": "application/vnd.google-apps.document", "modifiedTime": "2026-11-13T12:42:35.678Z", "viewUrl": "https://docs.google.com/document/d/1TAki_snPVg-kEsqEvLhZ38YIuaW9xicCpAa0fh2de1c/edit?usp=drivesdk"}]}, "meetings": {"results": [{"id": 419357843163, "properties": {"hs_meeting_start_time": "2027-01-20T19:30:00Z", "hs_attendee_owner_ids": "170042000", "hubspot_owner_id": "87139050", "hs_meeting_title": "Pratus Leadership Call"}}, {"id": 419339981533, "properties": {"hs_meeting_start_time": "2027-01-06T19:30:00Z", "hs_attendee_owner_ids": "170042000", "hubspot_owner_id": "87139050", "hs_meeting_title": "Pratus Leadership Call"}}, {"id": 419338173136, "properties": {"hs_meeting_start_time": "2026-12-23T19:30:00Z", "hs_attendee_owner_ids": "170042000", "hubspot_owner_id": "87139050", "hs_meeting_title": "Pratus Leadership Call"}}, {"id": 419334592248, "properties": {"hs_meeting_start_time": "2026-12-09T19:30:00Z", "hs_attendee_owner_ids": "170042000", "hubspot_owner_id": "87139050", "hs_meeting_title": "Pratus Leadership Call"}}, {"id": 419336388312, "properties": {"hs_meeting_start_time": "2026-11-25T19:30:00Z", "hs_attendee_owner_ids": "170042000", "hubspot_owner_id": "87139050", "hs_meeting_title": "Pratus Leadership Call"}}, {"id": 415539439296, "properties": {"hs_meeting_start_time": "2026-11-12T15:00:00Z", "hs_attendee_owner_ids": "170042000", "hubspot_owner_id": "87139050", "hs_meeting_title": "Pratus Leadership Call", "hs_meeting_outcome": "COMPLETED"}}, {"id": "gcal-3shilro8aa6po9heomuveavo56_20261028T183000Z", "properties": {"hs_meeting_start_time": "2026-10-28T18:30:00Z", "hs_meeting_title": "Pratus Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}, {"id": "gcal-3shilro8aa6po9heomuveavo56_20261014T183000Z", "properties": {"hs_meeting_start_time": "2026-10-14T18:30:00Z", "hs_meeting_title": "Pratus Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}, {"id": "gcal-3shilro8aa6po9heomuveavo56_20261007T183000Z", "properties": {"hs_meeting_start_time": "2026-10-07T18:30:00Z", "hs_meeting_title": "Pratus Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}]}, "owners": {"owners": [{"ownerId": 26684738, "name": "Joachim Koch", "isActive": false}, {"ownerId": 87139050, "name": "Patrick McClure", "isActive": true}, {"ownerId": 164569925, "name": "Hunter Dye", "isActive": false}, {"ownerId": 164569926, "name": "Mark McClure", "isActive": true}, {"ownerId": 164569927, "name": "Jenni Farmer", "isActive": true}, {"ownerId": 165899946, "name": "Emily Ballinger", "isActive": true}, {"ownerId": 169105455, "name": "Michele Carbone", "isActive": true}, {"ownerId": 170041932, "name": "Zach Uvodich", "isActive": true}, {"ownerId": 170042000, "name": "Savannah Mills", "isActive": true}]}, "people": {"people": [{"key": "leadership", "section": "leadership", "order": 1, "name": "Mindi Pratus & Tamsyn", "role": "Leadership call with Patrick and Savannah", "active": "Yes", "match": "pratus leadership", "working_on": "On Nov 12, Mindi and Tamsyn agreed to move the leadership call from bi-weekly to monthly, with extra calls as needed, so the agency's limited time goes to foundational work. Hiring is the top priority to free Mindi for SOPs and the AMS decision; she finished the New Business SOP and is comparing QQ with Hawksoft before committing. John and Will from the Burnett office train on AgencyZoom at the main office next Thursday, and Pratus will evaluate joining the SBMP aggregator network with Patrick's help after the Germania conference in January.", "as_of": "2026-11-12", "source": "Fathom: Pratus Leadership Call (Nov 12)", "fallback_last_date": "2026-11-12", "fallback_last_title": "Pratus Leadership Call", "fallback_last_with": "Patrick McClure, Savannah Mills", "history": "[{\"as_of\": \"2026-10-28\", \"meeting\": \"Pratus Leadership Call\", \"working_on\": \"Mandatory in-person bi-weekly staff meetings (1-hour meeting plus 1-hour training) to improve communication and reinforce processes across both offices. Tamsyn drafting an SOP for the full life cycle of a service request in AgencyZoom, with one clear owner per task. Reinforcing use of carrier guidelines and underwriter checks before going to brokerage markets. Hawksoft is the likely AMS; confirming the AgencyZoom integration. Recruiting: no strong candidates yet; ad spend adjusted and the Facebook posting is pending.\"}, {\"as_of\": \"2026-10-14\", \"meeting\": \"Pratus Leadership Call\", \"working_on\": \"Burnett office roles realigned: John leads new business and day-to-day coordination there, with Will focused on service. Mindi's workload is still heavy after September's surplus lines crunch (20 renewals) and carrier delays. March 2027 has 27 surplus lines renewals, so planning starts early: Tamsyn is adding them to an AgencyZoom pipeline. AgencyZoom notes are helping the front desk answer client questions. Job posting graphic in progress.\"}]"}], "recruiting": [{"key": "pl_am", "order": 1, "role": "Personal Lines Account Manager", "stage": "Active candidates", "hire": "", "notes": "Hiring is the top priority so Mindi can focus on foundational work. IPT held a virtual interview with the candidate from Progressive on Nov 13 and she remains in the interview stage in Workable; Mindi meets a local candidate this week. Earlier interviews (Oct 28) produced no strong candidates; IPT continues to fund the recruiting ad spend. A major competitor is reportedly moving agents to straight salary, which may open the door to recruiting experienced agents.", "active": "Yes"}], "action_items": [{"key": "t1", "owner": "Tamsyn", "task": "Draft the SOP for service-request intake and completion in AgencyZoom", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t2", "owner": "Tamsyn", "task": "Confirm the Hawksoft / AgencyZoom integration with the recommended agent", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t3", "owner": "Mindi Pratus", "task": "Schedule the first in-person bi-weekly staff meeting", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t4", "owner": "Mindi Pratus", "task": "Assign John to coordinate Burnett office attendance", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t5", "owner": "Mindi Pratus", "task": "Send the New Business SOP to Savannah for feedback", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t6", "owner": "Mindi Pratus", "task": "Review QQ alongside Hawksoft before selecting an AMS", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t7", "owner": "Mindi Pratus", "task": "Meet with the local candidate next week", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t8", "owner": "Tamsyn", "task": "Keep trimming the ENS surplus Q1 renewal list and send 90-day non-renewal letters", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t9", "owner": "Mindi Pratus", "task": "Meet with SBMP at the Germania Agents Conference in January", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}]}, "recruiting": {"people": [{"key": "leadership", "section": "leadership", "order": 1, "name": "Mindi Pratus & Tamsyn", "role": "Leadership call with Patrick and Savannah", "active": "Yes", "match": "pratus leadership", "working_on": "On Nov 12, Mindi and Tamsyn agreed to move the leadership call from bi-weekly to monthly, with extra calls as needed, so the agency's limited time goes to foundational work. Hiring is the top priority to free Mindi for SOPs and the AMS decision; she finished the New Business SOP and is comparing QQ with Hawksoft before committing. John and Will from the Burnett office train on AgencyZoom at the main office next Thursday, and Pratus will evaluate joining the SBMP aggregator network with Patrick's help after the Germania conference in January.", "as_of": "2026-11-12", "source": "Fathom: Pratus Leadership Call (Nov 12)", "fallback_last_date": "2026-11-12", "fallback_last_title": "Pratus Leadership Call", "fallback_last_with": "Patrick McClure, Savannah Mills", "history": "[{\"as_of\": \"2026-10-28\", \"meeting\": \"Pratus Leadership Call\", \"working_on\": \"Mandatory in-person bi-weekly staff meetings (1-hour meeting plus 1-hour training) to improve communication and reinforce processes across both offices. Tamsyn drafting an SOP for the full life cycle of a service request in AgencyZoom, with one clear owner per task. Reinforcing use of carrier guidelines and underwriter checks before going to brokerage markets. Hawksoft is the likely AMS; confirming the AgencyZoom integration. Recruiting: no strong candidates yet; ad spend adjusted and the Facebook posting is pending.\"}, {\"as_of\": \"2026-10-14\", \"meeting\": \"Pratus Leadership Call\", \"working_on\": \"Burnett office roles realigned: John leads new business and day-to-day coordination there, with Will focused on service. Mindi's workload is still heavy after September's surplus lines crunch (20 renewals) and carrier delays. March 2027 has 27 surplus lines renewals, so planning starts early: Tamsyn is adding them to an AgencyZoom pipeline. AgencyZoom notes are helping the front desk answer client questions. Job posting graphic in progress.\"}]"}], "recruiting": [{"key": "pl_am", "order": 1, "role": "Personal Lines Account Manager", "stage": "Active candidates", "hire": "", "notes": "Hiring is the top priority so Mindi can focus on foundational work. IPT held a virtual interview with the candidate from Progressive on Nov 13 and she remains in the interview stage in Workable; Mindi meets a local candidate this week. Earlier interviews (Oct 28) produced no strong candidates; IPT continues to fund the recruiting ad spend. A major competitor is reportedly moving agents to straight salary, which may open the door to recruiting experienced agents.", "active": "Yes"}], "action_items": [{"key": "t1", "owner": "Tamsyn", "task": "Draft the SOP for service-request intake and completion in AgencyZoom", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t2", "owner": "Tamsyn", "task": "Confirm the Hawksoft / AgencyZoom integration with the recommended agent", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t3", "owner": "Mindi Pratus", "task": "Schedule the first in-person bi-weekly staff meeting", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t4", "owner": "Mindi Pratus", "task": "Assign John to coordinate Burnett office attendance", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Oct 28)", "done_on": "", "done_note": ""}, {"key": "t5", "owner": "Mindi Pratus", "task": "Send the New Business SOP to Savannah for feedback", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t6", "owner": "Mindi Pratus", "task": "Review QQ alongside Hawksoft before selecting an AMS", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t7", "owner": "Mindi Pratus", "task": "Meet with the local candidate next week", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t8", "owner": "Tamsyn", "task": "Keep trimming the ENS surplus Q1 renewal list and send 90-day non-renewal letters", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t9", "owner": "Mindi Pratus", "task": "Meet with SBMP at the Germania Agents Conference in January", "due": "", "active": "Yes", "from": "Pratus Leadership Call (Nov 12)", "done_on": "", "done_note": ""}]}}, "checks": {}}</script>
+<script>
+/* Stand-in for the Claude dashboard runtime: serves the saved data and runs the page's own drawing code. */
+(function () {
+  const RAW = JSON.parse(document.getElementById('rose-data').textContent);
+  window.SIG = { checks: RAW.checks || {}, db: null, canEdit: false, me: null };
+  const loaders = {}, calcs = {}, draws = {}, cache = {};
+  function get(id) {
+    if (cache[id]) return cache[id];
+    if (calcs[id]) {
+      const c = calcs[id];
+      const args = (c.inputs || []).map((i) => { const v = get(i); return v.status === 'ok' ? v.data : (calcs[i] ? null : []); });
+      try { cache[id] = { status: 'ok', data: c.fn(...args) }; }
+      catch (e) { console.error(id, e); cache[id] = { status: 'error', data: null, message: String(e) }; }
+      return cache[id];
+    }
+    if (Object.prototype.hasOwnProperty.call(RAW.data, id)) {
+      let d = RAW.data[id];
+      if (loaders[id]) {
+        try { d = loaders[id].fn({ answer: d, text: JSON.stringify(d) }); }
+        catch (e) { console.error(id, e); return (cache[id] = { status: 'error', data: [], message: String(e) }); }
+      }
+      return (cache[id] = { status: 'ok', data: d });
+    }
+    return { status: 'missing', data: [] };
+  }
+  function run(name) {
+    const fn = draws[name]; if (!fn) return;
+    document.querySelectorAll('[data-draw="' + name + '"]').forEach((el) => { try { fn(el); } catch (e) { console.error(name, e); } });
+  }
+  window.dash = {
+    data: (id) => Object.assign({ refreshing: false, meta: {} }, get(id)),
+    calc: (id, spec) => { calcs[id] = spec; },
+    loader: (id, spec) => { loaders[id] = spec; },
+    draw: (name, fn) => { if (typeof fn === 'function') draws[name] = fn; else run(name); },
+    onData: (fn) => { try { fn(); } catch (e) { console.error(e); } },
+    refresh: () => {}, params: () => ({}), setParams: () => {}, resetParams: () => {}, setLink: () => {},
+    colors: ['#21418a', '#2f7d4f', '#a2541b', '#8a6d12', '#6b675e'],
+    _runAll: () => Object.keys(draws).forEach(run)
+  };
+})();
+</script>
+
+<style>
+.sig { --sig-acc: #5b3a8c; font-family: var(--font-anthropic-sans); color: var(--color-fg); display: flex; flex-direction: column; gap: var(--cds-gap-xl); }
+.sig-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-lg); }
+.sig-logo { background: #2b2d31; border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-md); flex: 0 0 auto; }
+.sig-logo img { display: block; width: 180px; max-width: 100%; height: auto; }
+.sig-mono { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--sig-acc); color: #ffffff; font-family: var(--font-anthropic-serif); font-size: 24px; letter-spacing: .02em; }
+.sig-headtext { flex: 1 1 260px; min-width: 0; }
+.sig-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; line-height: 1.15; }
+.sig-sub { margin: 4px 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-take { margin: var(--cds-gap-sm) 0 0; font-size: var(--cds-font-size-body); line-height: 1.5; }
+.sig-take b { font-weight: var(--cds-font-weight-medium); }
+.sig-nav { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+.sig-nav a { font-size: var(--cds-font-size-caption); color: var(--color-fg); text-decoration: none; border: 1px solid var(--color-border-line); border-radius: 999px; padding: 4px 12px; background: var(--color-panel); }
+.sig-nav a:hover { border-color: var(--color-fg-muted); }
+.sig-sec { display: flex; flex-direction: column; gap: var(--cds-gap-md); scroll-margin-top: 12px; }
+.sig-sec-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--cds-gap-sm); border-bottom: 2px solid var(--sig-acc); padding-bottom: var(--cds-pad-sm); }
+.sig-sec-head h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.sig-sec-head p { margin: 2px 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-toggle { display: inline-flex; align-items: center; gap: 6px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.sig-toggle .sig-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: 999px; overflow: hidden; }
+.sig-toggle button { font: inherit; color: var(--color-fg); background: var(--color-panel); border: 0; padding: 4px 14px; cursor: pointer; }
+.sig-toggle button + button { border-left: 1px solid var(--color-border-line); }
+.sig-toggle button[aria-pressed="true"] { background: var(--sig-acc); color: #ffffff; }
+.sig-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: var(--cds-gap-md); min-height: 80px; }
+.sig-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.sig-card h3 { margin: 0; font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); }
+.sig-card .sig-role { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-cardtop { display: flex; justify-content: space-between; gap: var(--cds-gap-sm); align-items: flex-start; }
+.sig-badge { font-size: 11px; border-radius: 999px; padding: 2px 8px; white-space: nowrap; border: 1px solid var(--color-border-line); color: var(--color-fg-muted); }
+.sig-badge.on { color: var(--color-ok); border-color: currentColor; }
+.sig-meets { display: grid; grid-template-columns: 1fr 1fr; gap: var(--cds-gap-sm); }
+.sig-meet { border-radius: calc(var(--cds-radius) - 2px); background: var(--color-bg); padding: var(--cds-pad-sm); min-width: 0; }
+.sig-meet .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--color-fg-muted); }
+.sig-meet .when { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); font-variant-numeric: tabular-nums; margin-top: 2px; }
+.sig-meet .what, .sig-meet .who { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); overflow-wrap: anywhere; }
+.sig-meet .none { font-size: var(--cds-font-size-caption); color: var(--color-warn); margin-top: 2px; }
+.sig-work { margin: 0; font-size: var(--cds-font-size-caption); line-height: 1.55; }
+.sig-work strong { font-weight: var(--cds-font-weight-medium); }
+.sig-foot { font-size: 11px; color: var(--color-fg-muted); display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.sig-foot a { color: inherit; }
+.sig-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-md); border: 1px dashed var(--color-border-line); border-radius: var(--cds-radius); }
+.sig-tablewrap { overflow-x: auto; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-panel); }
+.sig-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+.sig-table th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: 8px 12px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.sig-table td { padding: 10px 12px; border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.sig-table tr:last-child td { border-bottom: 0; }
+.sig-table td.nowrap { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.sig-table .overdue { color: var(--color-bad); }
+.sig-stages { display: flex; gap: 4px; flex-wrap: wrap; }
+.sig-stage { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--color-border-line); color: var(--color-fg-muted); white-space: nowrap; }
+.sig-stage.done { background: color-mix(in srgb, var(--sig-acc) 18%, transparent); color: var(--color-fg); }
+.sig-stage.now { background: var(--sig-acc); color: #fff; border-color: var(--sig-acc); }
+.sig-origin { font-size: 11px; color: var(--color-fg-muted); }
+.sig-check { display: inline-block; width: 16px; height: 16px; border: 1.5px solid var(--color-fg-muted); border-radius: 4px; line-height: 14px; text-align: center; font-size: 12px; }
+.sig-check.done { background: var(--color-ok); border-color: var(--color-ok); color: #fff; }
+.sig-cb { width: 16px; height: 16px; accent-color: var(--color-ok); cursor: pointer; margin: 0; }
+.sig-table tr.sig-grp td { background: var(--color-bg); font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-caption); color: var(--color-fg); padding-top: 12px; }
+.sig-lib { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: var(--cds-gap-sm); min-height: 40px; }
+.sig-lib li { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.sig-lib a { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-body); text-decoration: none; overflow-wrap: anywhere; }
+.sig-lib a:hover { text-decoration: underline; }
+.sig-lib .meta { font-size: 11px; color: var(--color-fg-muted); }
+.sig-lib li.sig-libempty { grid-column: 1 / -1; border-style: dashed; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-libfolder { color: inherit; }
+.sig-donetask { text-decoration: line-through; color: var(--color-fg-muted); }
+.sig-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.sig-details { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.sig-details summary { cursor: pointer; }
+.sig-details ul { margin: 8px 0 0; padding-left: 18px; line-height: 1.6; }
+[data-dash-source-state=refreshing] { opacity: .5; }
+@media (max-width: 420px) { .sig-meets { grid-template-columns: 1fr; } }
+.sig-bullets { margin: 0; padding-left: 18px; font-size: var(--cds-font-size-caption); line-height: 1.5; display: flex; flex-direction: column; gap: 4px; }
+.sig-bullets li::marker { color: var(--color-fg-muted); }
+
+/* frozen section menu */
+.sig-nav { position: sticky; top: 0; z-index: 30; background: var(--color-bg); padding: 10px 0; box-shadow: 0 1px 0 var(--color-border-line); }
+section[id] { scroll-margin-top: 64px; }
+
+/* past notes */
+.sig-hist { font-size: var(--cds-font-size-caption); border-top: 1px dashed var(--color-border-line); padding-top: 6px; }
+.sig-hist summary { cursor: pointer; color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); }
+.sig-hist-entry { margin-top: 8px; }
+.sig-hist-date { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--color-fg-muted); margin-bottom: 2px; }
+
+/* frozen logo in the section menu */
+.sig-nav { align-items: center; }
+.sig-navlogo { display: inline-flex; align-items: center; margin-right: 6px; }
+.sig-navlogo:empty { display: none; }
+.sig-navlogo img { display: block; height: 30px; width: auto; max-width: 140px; object-fit: contain; background: #2b2d31; border: 1px solid #2b2d31; border-radius: 6px; padding: 3px 8px; }
+section[id] { scroll-margin-top: 72px; }
+</style>
+
+<div class="sig">
+  <header class="sig-head" id="top">
+    <div class="sig-logo"><img src="data:image/png;base64,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" alt="Pratus Insurance logo"></div>
+    <div class="sig-headtext">
+      <h1 class="sig-title">Pratus Insurance Services</h1>
+      <p class="sig-sub">Client dashboard · Impact Performance Team</p>
+    </div>
+  </header>
+
+  <nav class="sig-nav" aria-label="Sections"><span class="sig-navlogo" aria-hidden="true"></span>
+    <a href="#sales" data-nav-sec="sales">Sales</a><a href="#sales-call" data-nav-sec="sales_call">Sales Call</a><a href="#leadership" data-nav-sec="leadership">Leadership</a><a href="#service" data-nav-sec="service">Service &amp; Ops</a><a href="#recruiting">Recruiting</a><a href="#library">Client Library</a><a href="#tasks">Open tasks</a>
+  </nav>
+
+  <section class="sig-sec" id="sales" data-hide-empty="sales">
+    <div class="sig-sec-head">
+      <div><h2>Sales</h2><p>Producers</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="sales" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="sales-call" data-hide-empty="sales_call">
+    <div class="sig-sec-head">
+      <div><h2>Sales Call</h2><p>Group sales sessions</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="sales_call" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="leadership" data-hide-empty="leadership">
+    <div class="sig-sec-head">
+      <div><h2>Leadership</h2><p>Leadership call with Mindi, Tamsyn, Patrick and Savannah</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="leadership" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="service" data-hide-empty="service">
+    <div class="sig-sec-head">
+      <div><h2>Service &amp; Ops</h2><p>Service and operations team members Savannah meets with</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="service" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="recruiting">
+    <div class="sig-sec-head">
+      <div><h2>Recruiting</h2><p>Roles IPT is recruiting for</p></div>
+    </div>
+    <div class="sig-tablewrap">
+      <table class="sig-table" data-source="recruiting" data-row-key="key">
+        <thead><tr><th data-field="role">Role</th><th data-field="stage">Stage</th><th data-field="hire">Hire</th><th data-field="notes">Notes</th></tr></thead>
+        <tbody data-draw="recruiting"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sig-sec" id="library">
+    <div class="sig-sec-head">
+      <div><h2>Client Library</h2><p>Files in the shared Pratus folder in Google Drive</p></div>
+    </div>
+    <ul class="sig-lib" data-draw="library" data-source="library"></ul>
+  </section>
+
+  <section class="sig-sec" id="tasks">
+    <div class="sig-sec-head">
+      <div><h2>Open tasks</h2><p>Mindi Pratus &amp; Tamsyn</p></div>
+    </div>
+    <div class="sig-tablewrap">
+      <table class="sig-table" data-source="tasks_all" data-row-key="key">
+        <thead><tr><th data-field="active"><span class="sig-sr">Done</span></th><th data-field="task">Task</th><th data-field="due">Due</th><th data-field="from">From</th></tr></thead>
+        <tbody data-draw="tasks"></tbody>
+      </table>
+    </div>
+  </section>
+
+</div>
+
+<script>
+// Rolling window for the HubSpot meeting query: 45 days back, 60 days ahead.
+(function () {
+  const day = 86400000, now = Date.now();
+  const iso = (t) => new Date(t).toISOString().slice(0, 10);
+  const p = dash.params();
+  const since = iso(now - 45 * day), until = iso(now + 60 * day);
+  if (p.since !== since || p.until !== until) dash.setParams({ since, until });
+})();
+
+
+dash.loader('meetings', {
+  description: 'Flattens each HubSpot meeting record into one row of its properties.',
+  fn: ({ answer }) => {
+    let a = answer;
+    if (typeof a === 'string') { try { a = JSON.parse(a); } catch (e) { throw new Error(a); } }
+    if (!a || !Array.isArray(a.results)) throw new Error('HubSpot returned no results list');
+    return a.results.map((r) => Object.assign({ id: String(r.id) }, r.properties || {}));
+  }
+});
+
+dash.loader('owners', {
+  description: 'Turns the HubSpot owners list into rows of owner id and name.',
+  fn: ({ answer }) => {
+    let a = answer;
+    if (typeof a === 'string') { try { a = JSON.parse(a); } catch (e) { throw new Error(a); } }
+    const list = (a && a.owners) || [];
+    return list.map((o) => ({ ownerId: String(o.ownerId), name: o.name, isActive: o.isActive }));
+  }
+});
+
+dash.loader('library', {
+  description: 'Turns the Google Drive file list into rows of title, type, last modified and link.',
+  fn: ({ answer }) => {
+    let a = answer;
+    if (typeof a === 'string') { try { a = JSON.parse(a); } catch (e) { throw new Error(a); } }
+    const files = (a && Array.isArray(a.files)) ? a.files : [];
+    return files.map((f) => ({ id: String(f.id), title: f.title || '', mimeType: f.mimeType || '', modifiedTime: f.modifiedTime || '', viewUrl: f.viewUrl || '' }));
+  }
+});
+
+
+['people', 'recruiting', 'action_items'].forEach((key) => {
+  dash.loader(key, {
+    description: 'Reads the ' + key + ' list from the notes file.',
+    fn: ({ answer }) => {
+      let a = answer;
+      if (typeof a === 'string') { a = JSON.parse(a); }
+      if (!a || !Array.isArray(a[key])) throw new Error('The notes file has no ' + key + ' list');
+      return a[key];
+    }
+  });
+});
+
+dash.calc('roster', {
+  inputs: ['people', 'meetings', 'owners'],
+  title: 'People with last and next IPT meeting',
+  description: 'Each person or group from the notes, with their latest past and earliest upcoming HubSpot meeting whose title matches them (and, where set, that includes the IPT owner).',
+  fn: (people, meetings, owners) => {
+    const names = {};
+    owners.forEach((o) => { names[o.ownerId] = o.name; });
+    const now = Date.now();
+    const skip = { CANCELED: 1, NO_SHOW: 1, RESCHEDULED: 1 };
+    return people.map((p) => {
+      const words = String(p.match || '').split('|').map((w) => w.trim().toLowerCase()).filter(Boolean);
+      const hits = meetings.filter((m) => {
+        const title = String(m.hs_meeting_title || '').toLowerCase();
+        if (!words.some((w) => title.includes(w))) return false;
+        if (skip[m.hs_meeting_outcome]) return false;
+        if (p.ipt_owner) {
+          const ids = [m.hubspot_owner_id].concat(String(m.hs_attendee_owner_ids || '').split(';'));
+          if (!ids.includes(String(p.ipt_owner))) return false;
+        }
+        return true;
+      }).map((m) => {
+        const ids = [m.hubspot_owner_id].concat(String(m.hs_attendee_owner_ids || '').split(';')).filter(Boolean);
+        const who = [...new Set(ids)].map((i) => names[i]).filter(Boolean).join(', ');
+        return { t: Date.parse(m.hs_meeting_start_time), title: String(m.hs_meeting_title || '').trim(), who };
+      }).filter((m) => !isNaN(m.t));
+      const past = hits.filter((m) => m.t <= now).sort((a, b) => b.t - a.t)[0];
+      const next = hits.filter((m) => m.t > now).sort((a, b) => a.t - b.t)[0];
+      return {
+        key: p.key, section: p.section, order: Number(p.order), name: p.name, role: p.role, active: p.active,
+        last_date: past ? new Date(past.t).toISOString() : (p.fallback_last_date || ''),
+        last_title: past ? past.title : (p.fallback_last_title || ''),
+        last_with: past ? past.who : (p.fallback_last_with || ''),
+        last_from: past ? 'HubSpot' : 'notes',
+        next_date: next ? new Date(next.t).toISOString() : (meetings.length ? '' : (p.fallback_next_date || '')),
+        next_title: next ? next.title : (meetings.length ? '' : (p.fallback_next_title || '')),
+        next_with: next ? next.who : (meetings.length ? '' : (p.fallback_next_with || '')),
+        next_from: next ? 'HubSpot' : 'notes',
+        working_on: p.working_on, as_of: p.as_of, history: (typeof p.history === 'string' ? p.history : JSON.stringify(p.history || [])), source: p.source, hubspot_id: p.hubspot_id || '',
+        hits: JSON.stringify(hits)
+      };
+    });
+  }
+});
+
+dash.calc('tasks_all', {
+  inputs: ['action_items'],
+  title: "Pratus team tasks",
+  description: "Action items for Pratus team members from recent call recaps. IPT team tasks are left out.",
+  fn: (action_items) => action_items.map((a) => ({
+    key: a.key, owner: a.owner, task: a.task, due: a.due || '', active: a.active, from: a.from,
+    done_on: a.done_on || '', done_note: a.done_note || ''
+  }))
+});
+
+dash.calc('summary', {
+  inputs: ['roster', 'tasks_all'],
+  title: 'Headline: next touchpoint and open tasks',
+  description: 'The earliest upcoming IPT meeting across active people and groups.',
+  fn: (roster, tasks_all) => {
+    const upcoming = (roster || []).filter((r) => r.active === 'Yes' && r.next_date)
+      .sort((a, b) => Date.parse(a.next_date) - Date.parse(b.next_date))[0];
+    return [{
+      next_title: upcoming ? upcoming.next_title : '',
+      next_date: upcoming ? upcoming.next_date : ''
+    }];
+  }
+});
+</script>
+
+<script>
+(function () {
+  for (const a of document.querySelectorAll('.sig-nav a')) {
+    a.addEventListener('click', () => dash.setLink(a.getAttribute('href').slice(1)));
+  }
+})();
+
+
+dash.onData(() => {
+  const r = dash.data('roster');
+  if (r.status !== 'ok' || !Array.isArray(r.data)) return;
+  const has = (sec) => r.data.some((x) => x.section === sec && x.active === 'Yes');
+  for (const s of document.querySelectorAll('[data-hide-empty]')) s.hidden = !has(s.getAttribute('data-hide-empty'));
+  for (const a of document.querySelectorAll('[data-nav-sec]')) a.hidden = !has(a.getAttribute('data-nav-sec'));
+});
+
+/* Split each person's meetings into last and next at the moment the page is drawn, so a meeting moves to "last" as soon as its start time passes. */
+window.sigNow = function (x) {
+  let hits = [];
+  try { hits = JSON.parse(x.hits || '[]'); } catch (e) { hits = []; }
+  if (!hits.length) return x;
+  const now = Date.now();
+  const past = hits.filter((m) => m.t <= now).sort((a, b) => b.t - a.t)[0];
+  const next = hits.filter((m) => m.t > now).sort((a, b) => a.t - b.t)[0];
+  const y = Object.assign({}, x);
+  if (past) { y.last_date = new Date(past.t).toISOString(); y.last_title = past.title; y.last_with = past.who; }
+  y.next_date = next ? new Date(next.t).toISOString() : '';
+  y.next_title = next ? next.title : '';
+  y.next_with = next ? next.who : '';
+  return y;
+};
+setInterval(() => dash.draw('cards'), 5 * 60 * 1000);
+
+window.sigFmt = function (v) {
+  if (!v) return '';
+  if (/^\d{4}-\d{2}-\d{2}$/.test(v)) return d3.utcFormat('%a %b %-d')(new Date(v + 'T00:00:00Z'));
+  const d = new Date(v);
+  return isNaN(d) ? v : d3.timeFormat('%a %b %-d · %-I:%M %p')(d);
+};
+window.sigFmtDay = function (v) {
+  if (!v) return '';
+  return d3.utcFormat('%b %-d')(new Date(v.slice(0, 10) + 'T00:00:00Z'));
+};
+
+function sigMark(el, source, field, key) {
+  el.setAttribute('data-source', source);
+  el.setAttribute('data-field', field);
+  el.setAttribute('data-where', 'key=' + encodeURIComponent(key));
+  return el;
+}
+window.sigMark = sigMark;
+
+function sigEl(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+window.sigEl = sigEl;
+
+
+window.sigPast = function (raw) {
+  let h = raw;
+  for (let i = 0; i < 3 && typeof h === 'string'; i++) { try { h = JSON.parse(h || '[]'); } catch (e) { h = []; } }
+  if (!Array.isArray(h)) return null;
+  h = h.filter((e) => e && (e.working_on || e.notes)).sort((a, b) => String(b.as_of || '').localeCompare(String(a.as_of || '')));
+  if (!h.length) return null;
+  const det = sigEl('details', 'sig-hist');
+  det.append(sigEl('summary', null, 'Past notes (' + h.length + ')'));
+  h.forEach((e) => {
+    const blk = sigEl('div', 'sig-hist-entry');
+    blk.append(sigEl('div', 'sig-hist-date', (e.meeting ? e.meeting + ' · ' : '') + (window.sigFmt(e.as_of) || '')));
+    const ul = sigEl('ul', 'sig-bullets');
+    String(e.working_on || e.notes || '').split(/\n|(?<=[.!?])\s+(?=[A-Z0-9$(“"])/).map((s) => s.replace(/^[•\-\s]+/, '').trim()).filter(Boolean).forEach((s) => ul.append(sigEl('li', null, s)));
+    blk.append(ul);
+    det.append(blk);
+  });
+  return det;
+};
+
+dash.draw('cards', (el) => {
+  const sec = el.getAttribute('data-sec');
+  const r = dash.data('roster');
+  if (r.status !== 'ok' || !Array.isArray(r.data)) {
+    el.replaceChildren();
+    if (r.status === 'loading') { el.classList.add('dash-skeleton'); }
+    else { el.classList.remove('dash-skeleton'); el.append(sigEl('div', 'sig-empty', r.status === 'connect' ? 'Waiting for HubSpot access…' : 'Failed to load')); }
+    return;
+  }
+  el.classList.remove('dash-skeleton');
+  const want = 'Yes';
+  const rows = r.data.filter((x) => x.section === sec && x.active === want).sort((a, b) => a.order - b.order);
+  if (!rows.length) {
+    el.replaceChildren(sigEl('div', 'sig-empty', want === 'Yes' ? 'No active entries in this section.' : 'No inactive entries in this section.'));
+    return;
+  }
+  const cards = rows.map((x0) => {
+    const x = window.sigNow(x0);
+    const c = sigEl('article', 'sig-card');
+    c.id = 'card-' + x.key;
+    const top = sigEl('div', 'sig-cardtop');
+    const head = sigEl('div');
+    head.append(sigMark(sigEl('h3', null, x.name), 'roster', 'name', x.key));
+    head.append(sigMark(sigEl('p', 'sig-role', x.role), 'roster', 'role', x.key));
+    top.append(head);
+    c.append(top);
+
+    const meets = sigEl('div', 'sig-meets');
+    [['last', 'Last IPT meeting'], ['next', 'Next IPT meeting']].forEach(([k, label]) => {
+      const m = sigEl('div', 'sig-meet');
+      m.append(sigEl('div', 'lbl', label));
+      if (x[k + '_date']) {
+        m.append(sigMark(sigEl('div', 'when', window.sigFmt(x[k + '_date'])), 'roster', k + '_date', x.key));
+        m.append(sigMark(sigEl('div', 'what', x[k + '_title']), 'roster', k + '_title', x.key));
+        if (x[k + '_with']) {
+          const w = sigEl('div', 'who', 'with ');
+          w.append(sigMark(sigEl('span', null, x[k + '_with']), 'roster', k + '_with', x.key));
+          m.append(w);
+        }
+      } else {
+        m.append(sigEl('div', 'none', k === 'next' ? 'None scheduled' : 'None found'));
+      }
+      meets.append(m);
+    });
+    c.append(meets);
+
+    const lines = String(x.working_on || '').split(/\n|(?<=[.!?])\s+(?=[A-Z0-9$(“"])/).map((s) => s.replace(/^[•\-\s]+/, '').trim()).filter(Boolean);
+    if (lines.length) {
+      const ul = sigMark(sigEl('ul', 'sig-bullets'), 'roster', 'working_on', x.key);
+      lines.forEach((s) => ul.append(sigEl('li', null, s)));
+      c.append(ul);
+    }
+
+    const past = window.sigPast(x.history);
+    if (past) c.append(past);
+    const foot = sigEl('div', 'sig-foot');
+    const asof = sigEl('span', null, 'Notes as of ');
+    asof.append(sigMark(sigEl('span', null, window.sigFmt(x.as_of)), 'roster', 'as_of', x.key));
+    foot.append(asof);
+    c.append(foot);
+    return c;
+  });
+  el.replaceChildren(...cards);
+});
+
+window.SIG = window.SIG || { checks: {}, db: null, canEdit: false, me: null };
+window.sigIsDone = function (x) {
+  const c = window.SIG.checks[x.key];
+  return c && typeof c.done === 'boolean' ? c.done : x.active === 'No';
+};
+(async () => {
+  if (!window.claude || !window.claude.use) return;
+  const db = await window.claude.use('db');
+  if (!db) return;
+  const user = await window.claude.use('user');
+  window.SIG.db = db;
+  window.SIG.canEdit = user ? (await user.canEdit()) === true : false;
+  window.SIG.me = user ? await user.id() : null;
+  db.collection('task_checks').onSnapshot((snap) => {
+    const next = {};
+    for (const doc of snap.docs) next[doc.id] = doc.data();
+    window.SIG.checks = next;
+    dash.draw('tasks');
+  }, () => {});
+  dash.draw('tasks');
+})();
+
+const SIG_KIND = (m) => /folder/.test(m) ? 'Folder' : /document/.test(m) ? 'Doc' : /spreadsheet|excel|sheet/.test(m) ? 'Sheet' : /presentation|powerpoint/.test(m) ? 'Slides' : /pdf/.test(m) ? 'PDF' : /image/.test(m) ? 'Image' : 'File';
+dash.draw('library', (ul) => {
+  const r = dash.data('library');
+  if (r.status === 'loading') { ul.replaceChildren(); return; }
+  const item = (f) => {
+    const li = sigEl('li');
+    const a = sigEl('a', null, f.title);
+    a.href = f.viewUrl; a.target = '_blank'; a.rel = 'noopener';
+    a.setAttribute('data-source', 'library'); a.setAttribute('data-field', 'title'); a.setAttribute('data-where', 'id=' + encodeURIComponent(f.id));
+    li.append(a);
+    li.append(sigEl('span', 'meta', SIG_KIND(f.mimeType) + (f.modifiedTime ? ' · updated ' + window.sigFmtDay(f.modifiedTime) : '')));
+    return li;
+  };
+  const out = r.status === 'ok' ? r.data.map(item) : [];
+  if (!out.length) {
+    out.push(sigEl('li', 'sig-libempty', r.status === 'ok' ? 'Nothing has been shared in the client folder yet.' : (r.status === 'connect' ? 'Waiting for Google Drive access…' : 'Failed to load')));
+  }
+  ul.replaceChildren(...out);
+});
+
+const SIG_STAGES = ['Active candidates', 'Onboarding', 'Role filled'];
+
+dash.draw('recruiting', (tb) => {
+  const r = dash.data('recruiting');
+  if (r.status !== 'ok') {
+    tb.replaceChildren();
+    if (r.status !== 'loading') { const tr = sigEl('tr'); const td = sigEl('td', null, 'Failed to load'); td.colSpan = 4; tr.append(td); tb.append(tr); }
+    return;
+  }
+  const want = 'Yes';
+  const rows = r.data.filter((x) => x.active === want).sort((a, b) => Number(a.order) - Number(b.order));
+  if (!rows.length) {
+    const tr = sigEl('tr'); const td = sigEl('td', 'sig-origin', want === 'Yes' ? "No open Pratus roles right now." : 'No inactive roles.'); td.colSpan = 4; tr.append(td);
+    tb.replaceChildren(tr);
+    return;
+  }
+  tb.replaceChildren(...rows.map((x) => {
+    const tr = sigEl('tr'); tr.setAttribute('data-key', encodeURIComponent(x.key));
+    tr.append(sigEl('td', null, x.role));
+    const st = sigEl('td');
+    const at = SIG_STAGES.indexOf(x.stage);
+    st.append(sigEl('span', 'sig-stage' + (at < 0 ? '' : ' now'), at < 0 ? 'Not launched' : x.stage));
+    tr.append(st);
+    tr.append(sigEl('td', null, x.hire || '—'));
+    tr.append(sigEl('td', null, x.notes));
+    return tr;
+  }));
+});
+
+dash.draw('tasks', (tb) => {
+  const r = dash.data('tasks_all');
+  if (r.status !== 'ok' || !Array.isArray(r.data)) {
+    tb.replaceChildren();
+    if (r.status !== 'loading') { const tr = sigEl('tr'); const td = sigEl('td', null, 'Failed to load'); td.colSpan = 4; tr.append(td); tb.append(tr); }
+    return;
+  }
+  const want = 'Yes';
+  const SIG_TASK_OWNERS = [...new Set(r.data.map((x) => x.owner))];
+  const today = new Date().toISOString().slice(0, 10);
+  const S = window.SIG;
+  /* completed tasks stay visible for one week after they were checked off, then drop off; open tasks always stay */
+  const cut = new Date(); cut.setUTCHours(0, 0, 0, 0); cut.setUTCDate(cut.getUTCDate() - 7);
+  const showTask = (x) => {
+    if (!window.sigIsDone(x)) return want === 'Yes';
+    const c = S.checks[x.key];
+    const doneOn = c && c.done && c.doneAt ? c.doneAt : x.done_on;
+    return !!doneOn && new Date(String(doneOn).slice(0, 10)) >= cut;
+  };
+  const rows = r.data.filter((x) => SIG_TASK_OWNERS.includes(x.owner) && showTask(x)).sort((a, b) =>
+    SIG_TASK_OWNERS.indexOf(a.owner) - SIG_TASK_OWNERS.indexOf(b.owner) || (window.sigIsDone(a) - window.sigIsDone(b)) || String(a.due || '9999').localeCompare(String(b.due || '9999')));
+  if (!rows.length) {
+    const tr = sigEl('tr'); const td = sigEl('td', 'sig-origin', want === 'Yes' ? 'No open tasks.' : 'No completed tasks yet.'); td.colSpan = 4; tr.append(td);
+    tb.replaceChildren(tr);
+    return;
+  }
+  let lastOwner = null;
+  tb.replaceChildren(...rows.flatMap((x) => {
+    const out = [];
+    if (x.owner !== lastOwner) {
+      lastOwner = x.owner;
+      const g = sigEl('tr', 'sig-grp'); const gd = sigEl('td', null, x.owner); gd.colSpan = 4; g.append(gd);
+      out.push(g);
+    }
+    const done = window.sigIsDone(x);
+    const chk = S.checks[x.key];
+    const tr = sigEl('tr'); tr.setAttribute('data-key', encodeURIComponent(x.key));
+    const ck = sigEl('td');
+    if (S.canEdit && S.db) {
+      const box = document.createElement('input');
+      box.type = 'checkbox'; box.className = 'sig-cb'; box.checked = done;
+      box.setAttribute('aria-label', (done ? 'Mark open: ' : 'Mark done: ') + x.task);
+      box.addEventListener('change', async () => {
+        const body = box.checked
+          ? { done: true, doneAt: new Date().toISOString(), doneBy: S.me || null }
+          : { done: false, doneAt: null, doneBy: S.me || null };
+        const prev = S.checks[x.key];
+        S.checks = Object.assign({}, S.checks, { [x.key]: body });
+        dash.draw('tasks');
+        try { await S.db.doc('task_checks/' + x.key).set(body); }
+        catch (e) { S.checks = Object.assign({}, S.checks, { [x.key]: prev }); dash.draw('tasks'); }
+      });
+      ck.append(box);
+    } else {
+      const box = sigEl('span', 'sig-check' + (done ? ' done' : ''), done ? '✓' : '');
+      box.setAttribute('role', 'img'); box.setAttribute('aria-label', done ? 'Completed' : 'Open');
+      ck.append(box);
+    }
+    tr.append(ck);
+    const task = sigEl('td');
+    task.append(sigEl('div', done ? 'sig-donetask' : null, x.task));
+    const doneOn = chk && chk.done && chk.doneAt ? chk.doneAt : x.done_on;
+    const doneNote = chk && chk.done ? '' : x.done_note;
+    if (done && (doneOn || doneNote)) {
+      task.append(sigEl('div', 'sig-origin', 'Done' + (doneOn ? ' ' + window.sigFmtDay(doneOn) : '') + (doneNote ? ': ' + doneNote : '')));
+    }
+    tr.append(task);
+    tr.append(sigEl('td', 'nowrap' + (!done && x.due && x.due < today ? ' overdue' : ''), x.due ? window.sigFmtDay(x.due) : '—'));
+    tr.append(sigEl('td', 'sig-origin', x.from));
+    out.push(tr);
+    return out;
+  }));
+});
+
+dash.draw('next_title', (el) => {
+  const s = dash.data('summary');
+  el.textContent = s.status === 'ok' && s.data && s.data[0] && s.data[0].next_title ? s.data[0].next_title : '—';
+});
+dash.draw('next_date', (el) => {
+  const s = dash.data('summary');
+  el.textContent = s.status === 'ok' && s.data && s.data[0] && s.data[0].next_date ? window.sigFmt(s.data[0].next_date) : '—';
+});
+</script>
+
+<script>
+(function () {
+  const slot = document.querySelector('.sig-navlogo');
+  const box = document.querySelector('.sig-head .sig-logo');
+  if (!slot || !box) return;
+  const sync = () => {
+    const img = box.querySelector('img');
+    if (!img || !img.getAttribute('src')) return;
+    const cur = slot.querySelector('img');
+    if (cur && cur.getAttribute('src') === img.getAttribute('src')) return;
+    const c = document.createElement('img');
+    c.src = img.getAttribute('src');
+    c.alt = '';
+    slot.replaceChildren(c);
+  };
+  sync();
+  new MutationObserver(sync).observe(box, { childList: true, subtree: true, attributes: true, attributeFilter: ['src'] });
+})();
+</script>
+
+<script>dash._runAll();</script>
+</div></body></html>
